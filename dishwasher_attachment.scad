@@ -6,7 +6,7 @@ dishwasher_door_upper_gap = 2;
 diswasher_cover_depth = 3;
 
 outside_wall_thickness = 2;
-outside_wall_height = 113;
+outside_wall_height = 120;
 
 width = 10;
 bottom_overhang_offset = 10;
@@ -42,7 +42,6 @@ module top_overhang() {
 
 module bottom_overhang() {
     mirror([0, 1, 0])
-    // TODO: distance variable
     translate([0,-outside_wall_height,bottom_overhang_offset])
         overhang(diswasher_cover_depth);
 }
